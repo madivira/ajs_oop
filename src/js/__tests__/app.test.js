@@ -37,7 +37,6 @@ describe('Character', () => {
   });
 
   test('Test Error name number', () => {
-    // const gamer = new Character(2, "Bowman", 100, 2, 30, 70);
     expect(() => new Character(2, 'Bowman', 100, 2, 30, 70)).toThrow(new Error('Error name'));
   });
 
