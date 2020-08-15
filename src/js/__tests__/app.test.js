@@ -23,7 +23,7 @@ describe('Character', () => {
 
   test('Test Error levelUp', () => {
     expect(() => {
-      const gamer = new Character('acaa', 'Bowman', 0, 1, 30, 70);
+      const gamer = new Character('acaa', 'Bowman', -1, 1, 30, 70);
       gamer.levelUp();
     }).toThrow();
   });

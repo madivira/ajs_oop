@@ -20,7 +20,7 @@ export default class Character {
   }
 
   levelUp() {
-    if (this.health) {
+    if (this.health >= 0) {
       this.level += 1;
       this.attack = Math.ceil(this.attack + (this.attack / 100) * 20);
       this.defence = Math.ceil(this.defence + (this.defence / 100) * 20);
